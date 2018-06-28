@@ -1,6 +1,7 @@
 import Login from '../components/login/login';
 import Cadastro from '../components/cadastro/cadastro';
 import Splash from '../components/splash/splash';
+import Sistemas from '../components/sistemas/Sistemas';
 
 import { Platform, StatusBar } from 'react-native';
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
@@ -34,10 +35,21 @@ export const SignedOut = createStackNavigator({
   },
 }, { headerMode: "none" });
 
+export const SignedIn = createStackNavigator({
+  Sistemas: {
+    screen: Sistemas,
+    navigationOptions: {
+      title: "Meus Sistemas",
+      headerMode: "none",
+    }
+  },
+}, { headerMode: "none" });
+
 export const createRootNavigator = (signedIn = false) => {
   return createSwitchNavigator({
-    screen: SignedOut
+    SignedIn: SignedIn,
+    SignedOut: SignedOut
   }, {
-    initialRouteName: signedIn ? "" : "SignedOut"
+    initialRouteName: signedIn ? "SignedIn" : "SignedOut"
   })
 }

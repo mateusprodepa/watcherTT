@@ -1,7 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 import { onSignIn } from '../../auth';
-import { StyleSheet, View, Image, Text, TextInput, Button, StatusBar, TouchableOpacity } from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Image,
+  Text,
+  TextInput,
+  Button,
+  StatusBar,
+  TouchableOpacity } from 'react-native';
 
 class loginForm extends React.Component {
 
@@ -27,7 +35,10 @@ class loginForm extends React.Component {
     axios.post('http://192.168.1.7:3000/api/login', data)
     .then(res => {
       Object.keys(res.data).includes('token') ?
-        onSignIn(res.token)
+        onSignIn(res.data.token)
+        .then(res => {
+          this.props.nav.navigate("Sistemas")
+        })
         : "";
     })
     .catch(err => console.log(err));
@@ -71,6 +82,7 @@ class loginForm extends React.Component {
           color="#ffa502"
           style={ styles.btn }
           onPress={() => this.submitData(this.state)}/>
+
         <View
           style={ styles.subTitles }>
           <TouchableOpacity>

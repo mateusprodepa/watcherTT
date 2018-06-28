@@ -5,13 +5,13 @@ import { isSignedIn } from './auth';
 export default class App extends React.Component {
 
   state = {
-    signedIn: true,
-    checkedSignIn: true,
+    signedIn: false,
+    checkedSignIn: false,
   }
 
   componentDidMount() {
     isSignedIn()
-      .then(res => this.state({ signedIn: res, checkedSignIn: true }))
+      .then(res => this.setState({ signedIn: res, checkedSignIn: true }))
       .catch((err) => err);
   }
 
