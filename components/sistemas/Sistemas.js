@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, Text, FlatList, AsyncStorage } from "react-native";
+import { View, Text, FlatList, AsyncStorage, StatusBar } from "react-native";
 import { List, ListItem, SearchBar, Header } from "react-native-elements";
-import { USER_KEY } from '../../auth';
+import { USER_KEY, onSignOut } from '../../auth';
 import axios from 'axios';
 
 export default class Sistemas extends Component {
@@ -10,8 +10,6 @@ export default class Sistemas extends Component {
 
     this.state = {
       data: [],
-      page: 1,
-      seed: 1,
       error: null,
       loading: false,
       refreshing: false
@@ -35,21 +33,16 @@ export default class Sistemas extends Component {
     );
   };
 
-  renderHeader = () => {
-    return <SearchBar placeholder="Procure um sistema..." lightTheme showLoading />;
-  };
-
   makeRemoteRequest = () => {
-    const { page, seed } = this.state;
     this.setState({ loading: true });
     AsyncStorage.getItem(USER_KEY)
     .then(token => {
       if(token !== null) {
-        axios.post("http://192.168.1.7/api/sistemas", token)
-        .then(res => res.json())
+        axios.get("http://192.168.1.7:3000/api/meusSistemas",
+        { headers: { Authorization: `Bearer ${token}` } })
         .then(res => {
           this.setState({
-            data: page === 1 ? res.results : [...this.state.data, ...res.results],
+            data: [ res.data ],
             error: res.error || null,
           });
         })
@@ -62,28 +55,54 @@ export default class Sistemas extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{
+          height: '100%',
+          width: '100%',
+          padding: 0,
+          margin: 0
+        }}>
+        <StatusBar hidden/>
         <Header
           backgroundColor='#ff793f'
           placement="left"
-          leftComponent={{ icon: 'menu', color: '#fff' }}
+          leftComponent={{
+            icon: 'menu',
+            color: '#fff',
+            onPress: () => this.makeRemoteRequest()
+          }}
           centerComponent={{ text: 'Meus Sistemas', style: { color: '#fff' } }}
-          rightComponent={{ icon: 'home', color: '#fff' }}
-        />
+          rightComponent={{
+            icon: 'power-settings-new',
+            color: '#cd0000',
+            onPress: () => { onSignOut().then(res => this.props.navigation.navigate('Splash')) }
+          }}
+          />
+        <SearchBar placeholder="Procure um sistema..." lightTheme showLoading />
         <List
-          containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0 }}>
+          containerStyle={{
+            margin: 0,
+            padding: 0,
+            borderTopWidth: 0,
+            borderBottomWidth: 0
+          }}>
           <FlatList
             data={this.state.data}
-            keyExtractor={item => item.email}
-            ListHeaderComponent={this.renderHeader}
+            keyExtractor={item => item.nome}
             ItemSeparatorComponent={this.renderSeparator}
             renderItem={({ item }) => (
               <ListItem
                 roundAvatar
-                title={`${item.name.first} ${item.name.last}`}
-                subtitle={item.email}
-                avatar={{ uri: item.picture.thumbnail }}
-                containerStyle={{ borderBottomWidth: 0 }}
+                titleStyle={{ color: '#1e2328', fontSize: 16 }}
+                subtitleStyle={{ color: item.status === "Online" ? "#2ecc71" : "#c0392b", fontSize: 12, fontWeight: 'bold' }}
+                chevronColor="#1e2328"
+                chevron
+                title={`${item.nome.toUpperCase()}`}
+                subtitle={`${item.status}`}
+                avatar={{ uri: item.imgUrl }}
+                containerStyle={{
+                  borderBottomWidth: 1,
+                  padding: 4,
+                }}
                 />
             )}
             />

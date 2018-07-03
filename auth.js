@@ -1,6 +1,6 @@
 import { AsyncStorage } from "react-native";
 
-export const USER_KEY = "watcherUniqueToken";
+export const USER_KEY = "ninini";
 
 export const onSignIn = async (token) => AsyncStorage.setItem(USER_KEY, token);
 
@@ -19,3 +19,17 @@ export const isSignedIn = () => {
       .catch(err => reject(err));
   });
 };
+
+export const getToken = () => {
+  return new Promise((resolve, reject) => {
+    AsyncStorage.getItem(USER_KEY)
+      .then(res => {
+        if (res !== null) {
+          resolve(res);
+        } else {
+          resolve(false);
+        }
+      })
+      .catch(err => reject(err));
+  });
+}

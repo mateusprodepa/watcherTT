@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { StyleSheet, View, Image, Text, TextInput, Button, StatusBar, TouchableOpacity, Picker } from 'react-native';
+import { onSignIn } from '../../auth';
 
 class cadastroForm extends React.Component {
 
@@ -20,7 +21,6 @@ class cadastroForm extends React.Component {
   key(obj, val) { for(var chave in obj) { if(obj[chave] === val && obj.hasOwnProperty(chave)) return chave; }}
 
   submitData(data) {
-    console.warn(data);
     for(var w in data) {
       if(data[w].length === 0 || '' && this.key(data, data[w] !== 'errors')) {
         const identificador = Object.keys(data).find(i => i === this.key(data, data[w]));
@@ -29,8 +29,15 @@ class cadastroForm extends React.Component {
     }
 
     axios.post('http://192.168.1.7:3000/api/auth', data)
-    .then(res => console.warn(res.data))
-    .catch(err => console.warn(err));
+    .then(res => {
+      Object.keys(res.data).includes('token') ?
+        onSignIn(res.data.token)
+        .then(res => {
+          this.props.nav.navigate("Sistemas")
+        })
+        : "";
+    })
+    .catch(err => console.log(err));
   }
 
   render() {
