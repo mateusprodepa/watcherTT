@@ -18,6 +18,14 @@ class cadastroForm extends React.Component {
     }
   }
 
+  showErrors = (errors) => {
+    let alerta = Object.values(errors).reduce((a, b) => {
+      return a + "\n. " + b;
+    })
+
+    Alert.alert( alerta );
+  }
+
   key(obj, val) { for(var chave in obj) { if(obj[chave] === val && obj.hasOwnProperty(chave)) return chave; }}
 
   submitData(data) {
@@ -28,14 +36,23 @@ class cadastroForm extends React.Component {
       };
     }
 
+<<<<<<< HEAD
     axios.post('http://10.1.3.76:5000/api/auth', data)
+=======
+    axios.post('http://10.1.3.59:3000/api/auth', data)
+>>>>>>> refs/remotes/origin/master
     .then(res => {
+      this.setState({ errors: {} })
       Object.keys(res.data).includes('token') ?
         onSignIn(res.data.token)
         .then(res => {
           this.props.nav.navigate("Sistemas")
         })
-        : "";
+        : this.setState({
+          errors: res.data
+        });
+
+      Object.keys(this.state.errors).length !== 0 ? this.showErrors(this.state.errors) : "";
     })
     .catch(err => console.log(err));
   }

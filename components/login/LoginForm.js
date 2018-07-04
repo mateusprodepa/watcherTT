@@ -27,11 +27,21 @@ class loginForm extends React.Component {
   key(obj, val) { for(var chave in obj) { if(obj[chave] === val && obj.hasOwnProperty(chave)) return chave; }}
 
   showErrors = (errors) => {
+<<<<<<< HEAD
     let err = Object.values(errors).reduce((a, b) => {
       return a + '\n.' + b;
     })
 
     Alert.alert( err );
+=======
+    let alerta = Object.values(errors).reduce((a, b) => {
+      return a + "\n. " + b;
+    })
+
+    Alert.alert(
+      alerta
+    );
+>>>>>>> refs/remotes/origin/master
   }
 
   submitData(data) {
@@ -42,7 +52,11 @@ class loginForm extends React.Component {
       };
     }
 
+<<<<<<< HEAD
     axios.post('http://10.1.3.76:5000/api/login', data)
+=======
+    axios.post('http://10.1.3.59:3000/api/login', data)
+>>>>>>> refs/remotes/origin/master
     .then(res => {
       this.setState({ errors: {} })
       Object.keys(res.data).includes('token') ?
@@ -54,9 +68,14 @@ class loginForm extends React.Component {
           errors: res.data
         });
 
+<<<<<<< HEAD
       Object.keys(this.state.errors).length !== 0 ? this.showErrors(this.state.errors) : null;
+=======
+      Object.keys(this.state.errors).length !== 0 ? this.showErrors(this.state.errors) : "";
+>>>>>>> refs/remotes/origin/master
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log(er));
+
   }
 
   render() {
