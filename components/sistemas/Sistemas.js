@@ -33,12 +33,29 @@ export default class Sistemas extends Component {
     );
   };
 
+  updateStatus = () => {
+    setInterval(() => {
+      axios.get('http://10.1.3.76:5000/api/sistemasServidor')
+      .then(res => {
+        let { data } = this.state.data;
+
+        let sistema = data.findOne(dt => dt.nome === res.nome);
+        this.setState({
+          data: {
+            ...this.state.data,
+            status: sistema.status
+          }
+        });
+      });
+    }, 30000);
+  }
+
   makeRemoteRequest = () => {
     this.setState({ loading: true });
     AsyncStorage.getItem(USER_KEY)
     .then(token => {
       if(token !== null) {
-        axios.get("http://192.168.1.7:3000/api/meusSistemas",
+        axios.get("http://10.1.3.76:5000/api/meusSistemas",
         { headers: { Authorization: `Bearer ${token}` } })
         .then(res => {
           this.setState({
@@ -54,6 +71,7 @@ export default class Sistemas extends Component {
   };
 
   render() {
+    { this.updateStatus() }
     return (
       <View style={{
           height: '100%',

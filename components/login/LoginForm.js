@@ -9,7 +9,9 @@ import {
   TextInput,
   Button,
   StatusBar,
-  TouchableOpacity } from 'react-native';
+  TouchableOpacity,
+  Alert
+} from 'react-native';
 
 class loginForm extends React.Component {
 
@@ -24,6 +26,14 @@ class loginForm extends React.Component {
 
   key(obj, val) { for(var chave in obj) { if(obj[chave] === val && obj.hasOwnProperty(chave)) return chave; }}
 
+  showErrors = (errors) => {
+    let err = Object.values(errors).reduce((a, b) => {
+      return a + '\n.' + b;
+    })
+
+    Alert.alert( err );
+  }
+
   submitData(data) {
     for(var w in data) {
       if(data[w].length === 0 || '' && this.key(data, data[w] !== 'errors')) {
@@ -32,14 +42,19 @@ class loginForm extends React.Component {
       };
     }
 
-    axios.post('http://192.168.1.7:3000/api/login', data)
+    axios.post('http://10.1.3.76:5000/api/login', data)
     .then(res => {
+      this.setState({ errors: {} })
       Object.keys(res.data).includes('token') ?
         onSignIn(res.data.token)
         .then(res => {
           this.props.nav.navigate("Sistemas")
         })
-        : "";
+        : this.setState({
+          errors: res.data
+        });
+
+      Object.keys(this.state.errors).length !== 0 ? this.showErrors(this.state.errors) : null;
     })
     .catch(err => console.log(err));
   }

@@ -19,17 +19,3 @@ export const isSignedIn = () => {
       .catch(err => reject(err));
   });
 };
-
-export const getToken = () => {
-  return new Promise((resolve, reject) => {
-    AsyncStorage.getItem(USER_KEY)
-      .then(res => {
-        if (res !== null) {
-          resolve(res);
-        } else {
-          resolve(false);
-        }
-      })
-      .catch(err => reject(err));
-  });
-}

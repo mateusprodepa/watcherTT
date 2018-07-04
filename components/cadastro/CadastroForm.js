@@ -28,7 +28,7 @@ class cadastroForm extends React.Component {
       };
     }
 
-    axios.post('http://192.168.1.7:3000/api/auth', data)
+    axios.post('http://10.1.3.76:5000/api/auth', data)
     .then(res => {
       Object.keys(res.data).includes('token') ?
         onSignIn(res.data.token)
