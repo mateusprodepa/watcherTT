@@ -1,6 +1,6 @@
 import { AsyncStorage } from "react-native";
 
-export const USER_KEY = "watcherAppToken";
+export const USER_KEY = "watcherTokenAppToken";
 
 export const onSignIn = async (token) => AsyncStorage.setItem(USER_KEY, token);
 

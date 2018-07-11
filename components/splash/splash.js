@@ -17,7 +17,7 @@ export default ({ navigation }) => {
            width: '65%'
          }}>
          <Button
-           title="Logue na sua conta"
+           title="Acesse sua conta"
            raised={true}
            color="#ff793f"
            onPress={() => navigation.navigate("Login")}/>

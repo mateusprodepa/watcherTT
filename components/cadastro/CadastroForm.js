@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { StyleSheet, View, Image, Text, TextInput, Button, StatusBar, TouchableOpacity, Picker } from 'react-native';
+import { StyleSheet, View, Image, Text, TextInput, Button, StatusBar, TouchableOpacity, Picker, Alert } from 'react-native';
 import { onSignIn } from '../../auth';
 
 class cadastroForm extends React.Component {
@@ -36,11 +36,7 @@ class cadastroForm extends React.Component {
       };
     }
 
-<<<<<<< HEAD
-    axios.post('http://10.1.3.76:5000/api/auth', data)
-=======
-    axios.post('http://10.1.3.59:3000/api/auth', data)
->>>>>>> refs/remotes/origin/master
+    axios.post('http://10.1.3.59:5000/api/auth', data)
     .then(res => {
       this.setState({ errors: {} })
       Object.keys(res.data).includes('token') ?
@@ -52,7 +48,7 @@ class cadastroForm extends React.Component {
           errors: res.data
         });
 
-      Object.keys(this.state.errors).length !== 0 ? this.showErrors(this.state.errors) : "";
+      Object.keys(this.state.errors).length > 0 ? this.showErrors(this.state.errors) : "";
     })
     .catch(err => console.log(err));
   }
@@ -145,7 +141,7 @@ class cadastroForm extends React.Component {
           onPress={() => this.submitData(this.state)}/>
         <View
           style={ styles.subTitles }>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={ () => this.props.nav.navigate('Login') }>
             <Text style={ styles.subTitle }>Já possui uma conta?</Text>
           </TouchableOpacity>
         </View>

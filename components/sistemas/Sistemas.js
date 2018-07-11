@@ -16,66 +16,49 @@ export default class Sistemas extends Component {
     };
   }
 
-  componentDidMount() {
-    this.makeRemoteRequest();
-  }
-
   renderSeparator = () => {
     return (
       <View
         style={{
-          height: 1,
-          width: "86%",
-          backgroundColor: "#CED0CE",
+          height: 0,
+          width: "100%",
+          backgroundColor: "#f74d4d",
           marginLeft: "14%"
         }}
       />
     );
   };
 
-  updateStatus = () => {
-    setInterval(() => {
-      axios.get('http://10.1.3.76:5000/api/sistemasServidor')
-      .then(res => {
-        let { data } = this.state.data;
-
-        let sistema = data.findOne(dt => dt.nome === res.nome);
-        this.setState({
-          data: {
-            ...this.state.data,
-            status: sistema.status
-          }
-        });
-      });
-    }, 30000);
-  }
-
   makeRemoteRequest = () => {
     this.setState({ loading: true });
     AsyncStorage.getItem(USER_KEY)
     .then(token => {
       if(token !== null) {
-<<<<<<< HEAD
-        axios.get("http://10.1.3.76:5000/api/meusSistemas",
-=======
-        axios.get("http://10.1.3.59:3000/api/meusSistemas",
->>>>>>> refs/remotes/origin/master
+        axios.get("http://10.1.3.59:5000/api/meusSistemas",
         { headers: { Authorization: `Bearer ${token}` } })
         .then(res => {
           this.setState({
-            data: [ res.data ],
+            data: res.data,
             error: res.error || null,
           });
         })
         .catch(error => {
           this.setState({ error, loading: false });
-        });
+        })
       }
     })
   };
 
+  componentDidMount() {
+    this.makeRemoteRequest();
+    this.chamadas = setInterval(this.makeRemoteRequest, 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.chamadas);
+  }
+
   render() {
-    { this.updateStatus() }
     return (
       <View style={{
           height: '100%',
@@ -87,19 +70,14 @@ export default class Sistemas extends Component {
         <Header
           backgroundColor='#ff793f'
           placement="left"
-          leftComponent={{
-            icon: 'menu',
-            color: '#fff',
-            onPress: () => this.makeRemoteRequest()
-          }}
           centerComponent={{ text: 'Meus Sistemas', style: { color: '#fff' } }}
           rightComponent={{
             icon: 'power-settings-new',
-            color: '#cd0000',
+            color: '#fff',
             onPress: () => { onSignOut().then(res => this.props.navigation.navigate('Splash')) }
           }}
           />
-        <SearchBar placeholder="Procure um sistema..." lightTheme showLoading />
+        <SearchBar placeholder="Procure um sistema..." lightTheme round showLoading />
         <List
           containerStyle={{
             margin: 0,
