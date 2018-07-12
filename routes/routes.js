@@ -2,6 +2,7 @@ import Login from '../components/login/login';
 import Cadastro from '../components/cadastro/cadastro';
 import Splash from '../components/splash/splash';
 import Sistemas from '../components/sistemas/Sistemas';
+import RecoverPassword from '../components/recoverPassword/RecoverPassword';
 
 import { Platform, StatusBar } from 'react-native';
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
@@ -33,6 +34,13 @@ export const SignedOut = createStackNavigator({
       headerMode: "none",
     }
   },
+  RecoverPassword: {
+    screen: RecoverPassword,
+    navigationOptions: {
+      title: "Redefinir a senha",
+      headerMode: "none",
+    }
+  }
 }, { headerMode: "none" });
 
 export const SignedIn = createStackNavigator({

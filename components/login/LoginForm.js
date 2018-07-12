@@ -102,7 +102,7 @@ class loginForm extends React.Component {
           <TouchableOpacity onPress={ () => this.props.nav.navigate('Cadastro') }>
             <Text style={ styles.subTitle }>Faça seu cadastro</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={ () => this.props.nav.navigate('RecoverPassword')}>
             <Text style={ styles.subTitle }>Esqueceu a sua senha?</Text>
           </TouchableOpacity>
         </View>
