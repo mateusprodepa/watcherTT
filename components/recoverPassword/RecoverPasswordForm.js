@@ -41,8 +41,8 @@ class RecoverPasswordForm extends Component{
             <TouchableOpacity onPress={ () => this.props.nav.navigate('Cadastro') }>
               <Text style={ styles.subTitle }>Faça seu cadastro</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={ () => this.props.nav.navigate('')}>
-              <Text style={ styles.subTitle }>Login</Text>
+            <TouchableOpacity onPress={ () => this.props.nav.navigate('Login')}>
+              <Text style={ styles.subTitle }>Já possui uma conta?</Text>
             </TouchableOpacity>
           </View>
         </View>
