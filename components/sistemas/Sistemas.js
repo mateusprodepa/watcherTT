@@ -34,7 +34,7 @@ export default class Sistemas extends Component {
     AsyncStorage.getItem(USER_KEY)
     .then(token => {
       if(token !== null) {
-        axios.get("http://10.1.3.59:5000/api/meusSistemas",
+        axios.get("http://10.1.2.89:5000/api/meusSistemas",
         { headers: { Authorization: `Bearer ${token}` } })
         .then(res => {
           this.setState({
