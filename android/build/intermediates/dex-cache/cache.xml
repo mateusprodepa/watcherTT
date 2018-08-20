@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/android.arch.lifecycle-runtime-1.0.0_5d3d547b2fff14efe627afe0f68420587ec8627a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/common-1.0.0_9acd00f8684b999f23bc1219658cc93a0b271f3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_71a6eb8f235d80715b8d5bf415fb88104fb22963.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-26.1.0_00659f4d513a916cde57137dd5a14501e0ed83c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-identifier/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63413895dce50f6123807d1db2274a1982a34194">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-identifier-15.0.1_c3c95495cafe7698b523974447e9e7decf816ba0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-26.1.0_9e0879ee35e97caf4348999fe9d3d2123f3a9643.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-26.1.0_ffa2aebbbc7ee9e0054f0c12cbcf8652f0067b78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_884f0bda0e018af5aa48ce2c3ea8e9e9aec44de1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-26.1.0_9d7d0fc40a4003d57c48dc0120090c0a7ba4b91f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0fbef528093d3d19b229116b683bd2a66d4aeae1">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-16.0.0_ab807e2a32019765314aa82ac0305b9e1ed0dd1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_8cb1dcf68d89b3835f6b8620276bad0ce2e75a94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_95d031ff411157980fc16aacff213e4766c8f049.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_f1b31295be92f01ba61bcf2b9b0bcc31ee1d17ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-measurement-connector-impl/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6bd97fd543ffb061a7d3f2f9d6247f4b5e0017f5">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-measurement-connector-impl-16.0.0_3acdd32ab0e6f34a8da84a1d668dc217d373d02e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/support-annotations-26.1.0_c2a404c42de000da3f3c0fe0f579380db66e3efd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid-interop/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2a69972573cb7e5cc6b8652bacf981e82b68ff71">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-interop-16.0.0_ac68478ba77aff28d7964859c3c756d32566bf0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_85a47c093518ec6ce493896a17fe44f9508b87c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-26.1.0_b88247e57fa26366d1c0b375b994ba60fa917562.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_df068bbcebbcdc4c5eb468faa4226388fa362dd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-measurement-connector/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f9148af2391a1288519f4f1d38da060c4a640e85">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-measurement-connector-16.0.0_2d4ec2f4e0113c748329b2e6c492929118e98603.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-stats/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c1e9d140d3260619ce2fa991d30b14b531d61dec">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-stats-15.0.1_ef9b9c83576eee367628dd13c3e4ed8046ad2f6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_a4ff18420a8934a9e3216240ba688ec9282bc97a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4d4d98a0428b2e620e6b4a228ef9f7cb2f0debd2">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-15.0.1_bfa0610f65c9be79d42397436e2acc18841c3f9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d8fe6d91310b54734f454dd490c3c869f6290576">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-15.0.1_d469a551ca4794874e96d1c5c70fbe92fe31caba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_a4500cf4f1ad9c20202ce609a108d135f0a1359d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement-base/15.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6a13da3b2de1cb4d43145994271c4d9e6ac060be">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-measurement-base-15.0.4_9122974f7287c536250517796870664a85c34032.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_835cd74e1e010dec2054cd7a3a38a35d6aede6b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.4_09279aa3b15e65a6664c7acba29087b4a1ce6d08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_b3ccc2babea9a884ceb74ff86b197240a1d61adc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8d813c05361147f6f515f749df19223cd6256314">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-15.0.1_9a1dc8251de580cb3904483dbdf8d7546aacef0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3e2b946046fb1d10649a06811b870f2eca30ea53">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-16.0.0_ad37e778ecf0c7e618b9910fc1896dab10442a46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_7e84a58f14b03e539c66973b1348dfcc92b37959.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_462724ec7d406b5acaa311d9749c0a5096ea2658.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_aaa04be53b5c5d30dcfef6e4ee2715159584c913.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_456beae1bfbef6196546d4c957b5e9b726c256ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_4fda1da0b2a219e22a6716140877f56da173f371.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/common-1.0.0_93fa78f27393294126ac1a87b7cef32adcf4140b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_e7ea4e486c0a517743326a43c02b22b521807cd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1e224748cbf54c34eac0bca6376922468b786775">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-16.0.0_5b9ec8ce0ab7b9509fa63c9657a76e4d54c377e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/16.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a66ffce1d574f71569fedd39d178da5856f0a84b">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-16.0.0_3c1502f88763f8fc0146bdebc89df02e5daf12a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/var/www/html/watcher/public/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/var/www/html/watcher/public/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-26.1.0_c7c5e01b350ae887c0f42e4dc25ecbabea67e82c.jar" />
+    </item>
+
+</items>

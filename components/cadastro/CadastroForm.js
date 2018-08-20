@@ -36,7 +36,7 @@ class cadastroForm extends React.Component {
       };
     }
 
-    axios.post('http://10.1.2.89:5000/api/auth', data)
+    axios.post(`http://${process.env.LOCAL_IP_ADDRESS}:5000/api/auth`, data)
     .then(res => {
       this.setState({ errors: {} })
       Object.keys(res.data).includes('token') ?
